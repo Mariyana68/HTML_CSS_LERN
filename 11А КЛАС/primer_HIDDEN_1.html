@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Детска кухня</title>
+
+    <style>
+
+        /* Нулиране на стандартните отстояния */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        /* Стил на страницата */
+        body{
+            background:#f5f5f5;
+            font-family:Arial;
+        }
+
+        /* Главен контейнер */
+        #wrapper{
+            width:1000px;
+            margin:auto;
+            background:white;
+        }
+
+        /* Header */
+        header{
+            background:#ffe082;
+            padding:20px;
+        }
+
+        /* Лого */
+        .logo{
+            font-size:32px;
+            font-weight:bold;
+            color:#e65100;
+        }
+
+        /* Слоган */
+        .slogan{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        /* Меню */
+        nav{
+            background:#ff9800;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            flex:1;
+            text-align:center;
+        }
+
+        nav ul li a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            padding:15px;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            background:#e65100;
+        }
+
+        /* Основна секция */
+        #main{
+            padding:20px;
+        }
+
+        /* Контейнер за ястията */
+        .foods{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        /* Всяка кутия */
+        .food-box{
+            width:220px;
+            border:1px solid orange;
+            border-radius:10px;
+            padding:15px;
+            text-align:center;
+            background:#fff3e0;
+            position:relative;
+        }
+
+        /* Име на ястието */
+        .food-name{
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        /* Картинката първоначално е скрита */
+        .food-image{
+            visibility:hidden;
+            width:100%;
+            height:140px;
+            border-radius:10px;
+        }
+
+        /* При посочване с мишката картинката се показва */
+        .food-box:hover .food-image{
+            visibility:visible;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Главен контейнер -->
+    <div id="wrapper">
+
+        <!-- Горна част -->
+        <header>
+
+            <!-- Лого -->
+            <div class="logo">🍴 Детска кухня</div>
+
+            <!-- Слоган -->
+            <div class="slogan">
+                Вкусна и здравословна храна за бебета
+            </div>
+
+        </header>
+
+        <!-- Меню -->
+        <nav>
+            <ul>
+                <li><a href="#">Постни ястия</a></li>
+                <li><a href="#">Местни ястия</a></li>
+                <li><a href="#">Десерти</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основно съдържание -->
+        <div id="main">
+
+            <h2>Месни ястия за бебета</h2>
+
+            <!-- Контейнер с всички ястия -->
+            <div class="foods">
+
+                <!-- Ястие 1 -->
+                <div class="food-box">
+                    <div class="food-name">Пилешко с картофи</div>
+                    <img class="food-image" src="images/food1.jpg">
+                </div>
+
+                <!-- Ястие 2 -->
+                <div class="food-box">
+                    <div class="food-name">Пуешко със зеленчуци</div>
+                    <img class="food-image" src="images/food2.jpg">
+                </div>
+
+                <!-- Ястие 3 -->
+                <div class="food-box">
+                    <div class="food-name">Телешко с моркови</div>
+                    <img class="food-image" src="images/food3.jpg">
+                </div>
+
+                <!-- Ястие 4 -->
+                <div class="food-box">
+                    <div class="food-name">Заешко с тиквички</div>
+                    <img class="food-image" src="images/food4.jpg">
+                </div>
+
+                <!-- Ястие 5 -->
+                <div class="food-box">
+                    <div class="food-name">Пилешко с ориз</div>
+                    <img class="food-image" src="images/food5.jpg">
+                </div>
+
+                <!-- Ястие 6 -->
+                <div class="food-box">
+                    <div class="food-name">Телешко с броколи</div>
+                    <img class="food-image" src="images/food6.jpg">
+                </div>
+
+                <!-- Ястие 7 -->
+                <div class="food-box">
+                    <div class="food-name">Пуешко с тиква</div>
+                    <img class="food-image" src="images/food7.jpg">
+                </div>
+
+                <!-- Ястие 8 -->
+                <div class="food-box">
+                    <div class="food-name">Агнешко със зеленчуци</div>
+                    <img class="food-image" src="images/food8.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
